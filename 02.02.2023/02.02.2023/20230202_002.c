@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char nomes[20][120]; // tamanho da matriz ajustado para 20
+char nomes[20][120];
 int c = -1;
 
 void imprimir();
@@ -71,7 +71,7 @@ void deletador()
     char ap[120];
 
     setbuf(stdin, NULL);
-    printf("Qual nome queres apagar? ");
+    printf("Qual nome quer remover? ");
     fgets(ap, sizeof(ap), stdin);
     ap[strlen(ap) - 1] = '\0';
 
