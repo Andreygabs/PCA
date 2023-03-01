@@ -25,31 +25,31 @@ int main(int argc, char const *argv[])
 
 void letraC(char eq[12][100], int notas[2][6], char sexo[12][1])
 {
-    int count1 = 0, count2 = 0;
+    int c1 = 0, c2 = 0;
 
     for (int i = 0; i < 6; i++)
     {
         if (sexo[i][0] == 'F')
-            count1++;
+            c1++;
     }
 
     for (int j = 6; j < 12; j++)
     {
         if (sexo[j][0] == 'F')
-            count2++;
+            c2++;
     }
 
     if (count1 > count2)
     {
-        printf("Eq. 01 > Eq. 02 ");
+        printf("Eq. 01 tem mais mulheres");
     }
-    else if (count2 > count1)
+    else if (c2 > c1)
     {
-        printf("Eq. 02 > Eq. 01");
+        printf("Eq. 02 tem mais mulheres");
     }
     else
     {
-        printf("As equipes tem a mesma quantidade de pessoas. ");
+        printf("As equipes tem a mesma quantidade de mulheres ");
     }
 }
 
@@ -57,7 +57,7 @@ void letraD(char eq[12][100], int notas[2][6], char sexo[12][1])
 {
     char escolhidas[6][100];
 
-    printf("Alunas aptas p/ o projeto: ");
+    printf("Alunas aptas: ");
 
     for (int i = 0; i < 12; i++)
     {
